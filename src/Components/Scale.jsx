@@ -65,17 +65,17 @@ const Scale = ({level, handleName,angleType, handleType, handleMeasure, angles, 
                 break;
             case 130: setPositions(['10%','14%']);
                 break;
-            case 120: setPositions(['0%','22%']);
+            case 120: setPositions(['10%','22%']);
                 break;
-            case 110: setPositions(['-7%','31%']);
+            case 110: setPositions(['0%','31%']);
                 break;
             case 100: setPositions(['0%','40%']);
                 break;
-            case 90: setPositions(['-11%','48%']);
+            case 90: setPositions(['0%','48%']);
                 break;
-            case 80: setPositions(['-10%','58%']);
+            case 80: setPositions(['0%','58%']);
                 break;
-            case 70: setPositions(['-6%','66%']);
+            case 70: setPositions(['0%','66%']);
                 break;
             case 60: setPositions(['1%','75%']);
                 break;
@@ -123,7 +123,7 @@ const Scale = ({level, handleName,angleType, handleType, handleMeasure, angles, 
                     </>)
                     : null
                     }
-                    <div className='validate'><button className='validate-btn' onClick={()=>handleClick()}> Validar </button></div>    
+                    <button className='validate-btn' onClick={()=>handleClick()}> Validar </button>  
                 </div>
             </>) 
             :

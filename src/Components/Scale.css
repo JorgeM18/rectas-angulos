@@ -52,28 +52,37 @@
     position: absolute;
 }
 
-.cont-scale .img-scale img{
-    width: 38%;
-}
-
-
-
-.cont-scale .img-scale .loose-arrow{
-    position: absolute;
-    bottom: 12px;
-    left: 50%;
-    transform-origin: 0% 50%;
-}
-
-.validate {
-    display: flex;
-    align-items: center;
-    justify-content: center ;
+.cont-inputs {
     width: 100%;
-    height: 20%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.validate-btn {
+.cont-inputs .angle-name{
+    width: 300px;
+    height: 30px;
+    margin: 35px;
+    padding: 5px;
+    border: 4px groove blue;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.cont-inputs .angle-type{
+    width: 315px;
+    height: 48px;
+    border: 4px groove blue;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.cont-inputs .validate-btn {
+    margin-top: 5%;
     width: 200px;
     height: 50px;
     background-color: white;
@@ -83,16 +92,7 @@
     cursor: pointer;
 }
 
-.inputs {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.inputs .angle-name{
+.cont-inputs .angle-measure{
     width: 300px;
     height: 30px;
     margin: 35px;
@@ -103,22 +103,14 @@
     font-weight: 900;
 }
 
-.inputs .angle-type{
-    width: 315px;
-    height: 48px;
-    border: 4px groove blue;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-weight: 900;
-}
+@media (max-width: 640px) {
+    .cont-scale {
+        width: 100%;
+        height: 70vh;
+        background-color: red;
+    }
 
-.inputs .angle-measure{
-    width: 300px;
-    height: 30px;
-    margin: 35px;
-    padding: 5px;
-    border: 4px groove blue;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-weight: 900;
+    .cont-scale .scale {
+        width: 100%;
+    }
 }

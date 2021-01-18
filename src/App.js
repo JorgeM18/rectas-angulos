@@ -92,6 +92,7 @@ function App() {
   useEffect(()=>{
       loadData(angles)
   },[]);
+
   console.log('SOLUCIONES')
   console.log(solutions)
   return (
